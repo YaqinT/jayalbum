@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="black" />
+    <title></title>
+    <link rel="stylesheet" href="trial.css">
+  </head>
+  <body>
+
+    <div class="search">
+    <input type="search" class="search-box" />
+    <span class="search-button">
+      <span class="search-icon"></span>
+    </span>
+  </div>
+
+  <script type="text/javascript" src="jquery-3.3.1.min.js">
+
+  </script>
+
+  <script>
+  $(document).ready(function(){
+    $('.search-button').click(function(){
+    $(this).parent().toggleClass('open');
+    });
+  });
+</script>
+  </body>
+</html>
